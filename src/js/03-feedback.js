@@ -3,13 +3,10 @@ const form = document.querySelector('.feedback-form');
 
 function onFormInput(event) {
   event.preventDefault();
-  const formEl = event.currentTarget.elements;
-  const email = formEl.email.value;
-  const message = formEl.message.value;
 
   const formData = {
-    email,
-    message,
+    email: form.email.value,
+    message: form.message.value,
   };
 
   console.log(formData);
